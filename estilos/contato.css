@@ -1,4 +1,4 @@
-.novidades, .novidades__pesquisa {
+.novidades, .novidades__email {
     padding: 2.5em;
     background: var(--azul-degrade);
     -webkit-background-clip: text;
@@ -16,7 +16,7 @@
     font-weight: 300;
 }
 
-.novidades__pesquisa {
+.novidades__email {
     width: 90%;
     padding: 1em;
     border: 1px solid var(--azul);
@@ -24,8 +24,29 @@
     color: var(--azul);
 }
 
-.novidades__pesquisa::placeholder {
+.novidades__email::placeholder {
     font-family: var(--fonte-principal);
     background: url("/imagem/Email.svg") no-repeat;
     padding-left: 2em;
+}
+
+@media  screen and (min-width: 1024px) {
+    .novidades {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .novidades__titulo {
+        font-size: 24px;
+    }
+
+    .novidades__descrição {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .novidades__email {
+        width: 30%;
+    }
 }
